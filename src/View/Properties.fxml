@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: bisque;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.PropertiesController">
+   <children>
+      <ComboBox fx:id="mazeGeneratorComboBox" layoutX="25.0" layoutY="228.0" prefHeight="25.0" prefWidth="179.0" promptText="Generation Algorithm" style="-fx-background-color: linear-gradient(#61a2b1, #2A5058); -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 5, 0.0, 0, 1);" />
+      <ComboBox fx:id="mazeSolveComboBox" layoutX="226.0" layoutY="228.0" prefWidth="150.0" promptText="Solution Algorithm" style="-fx-background-color: linear-gradient(#61a2b1, #2A5058); -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 5, 0.0, 0, 1);" />
+      <Label contentDisplay="CENTER" layoutX="173.0" layoutY="98.0" style="-fx-font-family: Arial Narrow; -fx-font-weight: bold;" text="Choose Maze Settings" textAlignment="CENTER" underline="true">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <TextField fx:id="threadSizeTextField" layoutX="399.0" layoutY="228.0" promptText="Thread Pool Size" style="-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 5, 0.0, 0, 1); -fx-font-family: Arial Narrow;" />
+      <Button fx:id="submitButton" layoutX="274.0" layoutY="323.0" mnemonicParsing="false" style="-fx-background-color: linear-gradient(#61a2b1, #2A5058); -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 5, 0.0, 0, 1); -fx-font-family: Arial Narrow; -fx-font-weight: bold; -fx-text-fill: white;" text="Submit" onAction="#submitProperties"/>
+   </children>
+</AnchorPane>
