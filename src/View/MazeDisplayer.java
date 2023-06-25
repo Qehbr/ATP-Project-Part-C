@@ -65,13 +65,13 @@ public class MazeDisplayer extends Canvas {
             //draw walls, goal, player
             drawMazeWalls(graphicsContext, cellHeight, cellWidth, rows, cols);
             drawMazeGoal(graphicsContext, cellHeight, cellWidth);
-            drawPlayer(graphicsContext, cellHeight, cellWidth);
+
 
             //if solution exists draw solution
             if (solution != null)
                 drawSolution(graphicsContext, cellHeight, cellWidth);
 
-
+            drawPlayer(graphicsContext, cellHeight, cellWidth); 
         }
     }
 
@@ -133,7 +133,7 @@ public class MazeDisplayer extends Canvas {
             System.out.println("There is no pass image file");
         }
 
-        //iterate throug maze
+        //iterate through maze
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
                 double x = j * cellWidth;
